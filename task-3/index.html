@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Landing page</title>
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <div class="container" ">
+            <div class=" logo">ExploreWorld</div>
+        <button class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav>
+            <ul id="menu">
+                <li><a href="#features">Services</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="landing-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Unforgettable trips, personalized itineraries, and exclusive deals. Let's explore the world together.</p>
+            <button class="btn" onclick="location.href='#features'">Get Started</button>
+        </div>
+    </section>
+
+    <section id="features" class="features container">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/booking.jpg" alt="Booking">
+                <div class="card-content">
+                    <h3>Easy Booking</h3>
+                    <p>Book flights, hotels, and tours in just a few clicks with our intuitive platform.</p>
+                    <button class="btn-small">Learn More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/Custom Itineraries.jpg" alt="Itinerary">
+                <div class="card-content">
+                    <h3>Custom Itineraries</h3>
+                    <p>Tailor-made travel plans crafted by experts to suit your preferences.</p>
+                    <button class="btn-small">Learn More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/tour-guide.jpg" alt="Guide">
+                <div class="card-content">
+                    <h3>Tour Guides</h3>
+                    <p>Connect with experienced guides for authentic local experiences.</p>
+                    <button class="btn-small">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations container">
+        <h2>Popular Destinations</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/paris.jpg" alt="Paris">
+                <div class="card-content">
+                    <h3>Paris, France</h3>
+                    <p>The city of light, love, and iconic landmarks.</p>
+                    <button class="btn-small">Explore</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/bali.jpeg" alt="Bali">
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Experience tropical paradise with stunning beaches and culture.</p>
+                    <button class="btn-small">Explore</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/New_york_times_square-terabass.jpg" alt="New York">
+                <div class="card-content">
+                    <h3>New York, USA</h3>
+                    <p>The city that never sleeps: entertainment, dining, and more.</p>
+                    <button class="btn-small">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="about-title">About ExploreWorld</h2>
+    <section id="about" class="about container">
+        <div class="grid-3">
+            <div class="about-img">
+                
+            </div>
+            <div>
+                <p>ExploreWorld is dedicated to making your travel dreams come true. With years of experience and a
+                    passion for exploration, our team curates unique experiences worldwide. From booking to itinerary
+                    planning to on-ground support, we’re with you every step of the way.</p>
+                <ul>
+                    <li>Expert travel consultants available 24/7</li>
+                    <li>Personalized recommendations for every traveler</li>
+                    <li>Trusted partnerships with global service providers</li>
+                    <li>Secure and seamless booking process</li>
+                    <li>Customer satisfaction is our top priority</li>
+                </ul>
+                <p>Join thousands of happy explorers who have discovered the world with us. Your adventure starts here!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container" style="text-align:center; padding:60px 20px;">
+        <h2>Contact Us</h2>
+        <p>Email: support@exploreworld.com | Phone: +1 234 567 890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ExploreWorld. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            loader.style.opacity = '0';
+            setTimeout(() => loader.remove(), 1000);
+        });
+        // Hamburger toggle
+        const burger = document.getElementById('burger'); const menu = document.getElementById('menu');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
